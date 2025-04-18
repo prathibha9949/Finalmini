@@ -1,0 +1,21 @@
+/* Ensure the entire page is covered */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Fullscreen background image */
+#login-container {
+    
+    width: 100vw;  /* Full viewport width */
+    height: 100vh;  /* Full viewport height */
+    background: url("../images/final7.png") no-repeat center center fixed;
+    background-size: cover; /* Ensures full coverage */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

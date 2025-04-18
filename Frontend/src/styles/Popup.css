@@ -1,0 +1,59 @@
+/* Overlay background */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* dark transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050; /* Make sure it's above everything */
+  }
+  
+  /* Popup content box */
+  .popup-content {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Responsive inputs */
+  .popup-content input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Button spacing */
+  .popup-content .btn {
+    min-width: 100px;
+  }
+  
+  /* Small screen adjustments */
+  @media (max-width: 576px) {
+    .popup-content {
+      width: 90%;
+      padding: 15px;
+    }
+  }
+  

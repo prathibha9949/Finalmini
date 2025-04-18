@@ -1,0 +1,16 @@
+.navbar {
+    background-color: #597D35; /* Consistent background color */
+  }
+  
+  .nav-link {
+    color: white !important; /* Ensures text is white */
+  }
+  
+  .navbar-toggler-icon {
+    background-color: white; /* Change the toggle icon color */
+  }
+  /* Make toast background fern green */
+.Toastify__toast--success {
+  background-color:rgb(168, 168, 5) !important;
+  color: white !important;
+}

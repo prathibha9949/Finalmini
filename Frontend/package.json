@@ -1,0 +1,59 @@
+{
+  "name": "farm",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@paypal/react-paypal-js": "^8.8.2",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^13.5.0",
+    "ajv": "^6.12.6",
+    "ajv-keywords": "^3.5.2",
+    "axios": "^1.7.9",
+    "bootstrap": "^5.3.3",
+    "eslint": "^9.20.1",
+    "nth-check": "^2.1.1",
+    "postcss": "^8.5.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.2.0",
+    "react-scripts": "^5.0.1",
+    "react-speech-recognition": "^3.10.0",
+    "react-toastify": "^11.0.5",
+    "socket.io-client": "^4.8.1",
+    "svgo": "^3.3.2",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "path-browserify": "^1.0.1",
+    "react-app-rewired": "^2.2.1",
+    "url": "^0.11.4",
+    "util": "^0.12.5"
+  }
+}

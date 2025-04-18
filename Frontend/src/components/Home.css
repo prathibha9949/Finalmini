@@ -1,0 +1,7 @@
+.custom-img {
+    max-width: 100%;  /* Maintain responsiveness */
+    height: auto;     /* Maintain aspect ratio */
+    max-height: 150px; /* Set a maximum height to reduce size */
+    background:url("C:\Users\kotta\Pictures\farm1.png");
+  }
+  

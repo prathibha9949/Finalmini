@@ -1,0 +1,18 @@
+/* Navbar.css */
+
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .navbar {
+    position: fixed; /* Fix navbar to the top */
+    top: 0; /* Align to the top */
+    width: 100%; /* Ensure it takes the full width */
+    z-index: 1000; /* Keep it on top of other content */
+  }
+  
+  .nav-link {
+    margin-right: 20px; /* Space between links */
+  }
+  

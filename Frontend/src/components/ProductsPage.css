@@ -1,0 +1,17 @@
+/* Add this rule to your ProductsPage.css file */
+.search-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .search-bar-container input {
+    max-width: 300px;
+    width: 100%;
+  }
+  
+  .product-list {
+    margin-top: 2rem;
+  }
+  
