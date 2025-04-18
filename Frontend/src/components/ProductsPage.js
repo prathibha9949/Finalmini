@@ -32,7 +32,7 @@ const ProductsPage = () => {
           return;
         }
 
-        const response = await axios.get("http://localhost:5004/api/products", {
+        const response = await axios.get("https://finalmini.onrender.com/api/products", {
           headers: { Authorization: `Bearer ${token}` },
         });
 
@@ -69,7 +69,7 @@ const ProductsPage = () => {
     try {
       const token = localStorage.getItem("token");
 
-      await axios.delete(`http://localhost:5004/api/products/${productId}`, {
+      await axios.delete(`https://finalmini.onrender.com/api/products/${productId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -159,7 +159,7 @@ const ProductsPage = () => {
                 <div className="col" key={product._id}>
                   <div className="card h-100 shadow-sm">
                     <img
-                      src={`http://localhost:5004${product.photo}`}
+                      src={`https://finalmini.onrender.com${product.photo}`}
                       className="card-img-top"
                       alt={product.equipmentName}
                       style={{ height: "200px", objectFit: "cover" }}

@@ -9,7 +9,7 @@ const ProductDetails = ({ product, onClose }) => {
         </span>
         <h2>{product.equipmentName}</h2>
         <img
-          src={`http://localhost:5004/uploads/${product.photo}`}
+          src={`https://finalmini.onrender.com/uploads/${product.photo}`}
           alt={product.equipmentName}
           style={{
             width: "100%",

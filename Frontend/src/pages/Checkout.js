@@ -6,12 +6,12 @@ const Checkout = () => {
   const [amount, setAmount] = useState("10.00");
 
   const createOrder = async () => {
-    const { data } = await axios.post("http://localhost:5004/api/paypal/create-order", { amount });
+    const { data } = await axios.post("https://finalmini.onrender.com/api/paypal/create-order", { amount });
     return data.orderID;
   };
 
   const captureOrder = async (orderID) => {
-    await axios.post("http://localhost:5004/api/paypal/capture-order", { orderID });
+    await axios.post("https://finalmini.onrender.com/api/paypal/capture-order", { orderID });
     alert("Payment successful!");
   };
 

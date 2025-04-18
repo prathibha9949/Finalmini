@@ -174,7 +174,7 @@ const AddProduct = ({ onProductAdded }) => {
     }
 
     try {
-        const response = await axios.post("http://localhost:5004/api/products/add", formData, {
+        const response = await axios.post("https://finalmini.onrender.com/api/products/add", formData, {
             headers: {
                 "Content-Type": "multipart/form-data",
                 "Authorization": `Bearer ${token}`, // Correctly formatted token

@@ -32,7 +32,7 @@ const Cart = () => {
                 <div className="cart-item" key={product._id}>
                   <div className="card shadow-sm">
                     <img
-                      src={`http://localhost:5004${product.photo}`}
+                      src={`https://finalmini.onrender.com${product.photo}`}
                       alt={product.equipmentName}
                       className="cart-image"
                     />

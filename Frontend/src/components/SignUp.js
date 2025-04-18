@@ -146,7 +146,7 @@ const Signup = () => {
     if (!validateForm()) return;
 
     try {
-      const response = await axios.post("http://localhost:5004/api/auth/signup", formData);
+      const response = await axios.post("https://finalmini.onrender.com/api/auth/signup", formData);
       if (response.data.success) {
         toast.success("✅ Registered successfully!");
         speak("Signup successful! Redirecting to login...", "en-US");

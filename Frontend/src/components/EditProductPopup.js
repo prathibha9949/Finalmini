@@ -20,7 +20,7 @@ const EditProductPopup = ({ product, onClose, onProductUpdated }) => {
       const token = localStorage.getItem("token");
 
       const response = await axios.put(
-        `http://localhost:5004/api/products/${product._id}`,
+        `https://finalmini.onrender.com/api/products/${product._id}`,
         formData,
         {
           headers: {

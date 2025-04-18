@@ -11,7 +11,7 @@ const LaborerList = () => {
     useEffect(() => {
         const fetchLaborers = async () => {
             try {
-                const response = await axios.get("http://localhost:5004/api/laborers");
+                const response = await axios.get("https://finalmini.onrender.com/api/laborers");
                 setLaborers(response.data.laborers);
             } catch (error) {
                 console.error("Error fetching laborers:", error);
@@ -38,7 +38,7 @@ const LaborerList = () => {
     const handleDelete = async (id) => {
         if (window.confirm("Are you sure you want to delete this laborer?")) {
             try {
-                await axios.delete(`http://localhost:5004/api/laborers/${id}`);
+                await axios.delete(`https://finalmini.onrender.com/api/laborers/${id}`);
                 setLaborers(laborers.filter((laborer) => laborer._id !== id));
                 alert("Laborer deleted successfully!");
             } catch (error) {
@@ -57,7 +57,7 @@ const LaborerList = () => {
     // Handle Update Submission
     const handleUpdateSubmit = async () => {
         try {
-            await axios.put(`http://localhost:5004/api/laborers/${selectedLaborer._id}`, updatedDetails);
+            await axios.put(`https://finalmini.onrender.com/api/laborers/${selectedLaborer._id}`, updatedDetails);
             setLaborers(
                 laborers.map((laborer) => (laborer._id === selectedLaborer._id ? { ...laborer, ...updatedDetails } : laborer))
             );

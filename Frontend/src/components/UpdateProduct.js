@@ -23,7 +23,7 @@ const UpdateProduct = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await axios.get(`http://localhost:5004/api/products/${id}`);
+        const res = await axios.get(`https://finalmini.onrender.com/api/products/${id}`);
         if (res.data && res.data.equipment) {
           const { equipmentName, rent, mobile, place, photo } = res.data.equipment;
 
@@ -36,7 +36,7 @@ const UpdateProduct = () => {
           });
 
           if (photo) {
-            setPreviewImage(`http://localhost:5004${photo}`);
+            setPreviewImage(`https://finalmini.onrender.com${photo}`);
           }
 
           setIsDataFetched(true); // ✅ Ensure useEffect only runs once
@@ -94,7 +94,7 @@ const UpdateProduct = () => {
     }
 
     try {
-      await axios.put(`http://localhost:5004/api/products/${id}`, formDataToSend, {
+      await axios.put(`https://finalmini.onrender.com/api/products/${id}`, formDataToSend, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 

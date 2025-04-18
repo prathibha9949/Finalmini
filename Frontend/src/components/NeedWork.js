@@ -12,7 +12,7 @@ const NeedWork = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:5004/api/laborers", { name, wage, mobile });
+            const response = await axios.post("https://finalmini.onrender.com/api/laborers", { name, wage, mobile });
     
             if (response.data.success) {
                 alert("Your details have been submitted successfully!");

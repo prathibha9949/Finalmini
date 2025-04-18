@@ -12,7 +12,7 @@ const Products = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("http://localhost:5004/api/products");
+        const response = await axios.get("https://finalmini.onrender.com/api/products");
         setProducts(response.data.products);
       } catch (err) {
         console.error("Error fetching products:", err);
@@ -37,7 +37,7 @@ const Products = () => {
         console.log("Deleting Product ID:", productId);
         console.log("Token:", token);
 
-        const response = await axios.delete(`http://localhost:5004/api/products/${productId}`, {
+        const response = await axios.delete(`https://finalmini.onrender.com/api/products/${productId}`, {
           headers: { Authorization: `Bearer ${token}` }, // Pass token in headers
         });
 
@@ -70,7 +70,7 @@ const Products = () => {
               <div className="col-md-4 mb-4" key={product._id}>
                 <div className="card shadow-sm">
                   <img
-                    src={`http://localhost:5004/uploads/${product.photo}`}
+                    src={`https://finalmini.onrender.com/uploads/${product.photo}`}
                     className="card-img-top"
                     alt={product.equipmentName}
                     style={{ height: "200px", objectFit: "cover" }}

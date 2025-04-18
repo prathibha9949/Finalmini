@@ -24,7 +24,7 @@ const BuyerDashboard = () => {
           navigate("/login");
           return;
         }
-        const response = await axios.get("http://localhost:5004/api/products", {
+        const response = await axios.get("https://finalmini.onrender.com/api/products", {
           headers: { Authorization: `Bearer ${token}` },
         });
         if (response.data.success) {
@@ -111,7 +111,7 @@ const BuyerDashboard = () => {
               <div className="col" key={product._id}>
                 <div className="card h-100 shadow-sm">
                   <img
-                    src={`http://localhost:5004${product.photo}`}
+                    src={`https://finalmini.onrender.com${product.photo}`}
                     className="card-img-top"
                     alt={product.equipmentName}
                     style={{ height: "200px", objectFit: "cover" }}
